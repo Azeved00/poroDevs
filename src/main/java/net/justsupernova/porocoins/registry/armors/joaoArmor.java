@@ -1,7 +1,8 @@
 package net.justsupernova.porocoins.registry.armors;
 
 import net.justsupernova.porocoins.PoroCoins;
-import net.justsupernova.porocoins.registry.items.hugoItem;
+import net.justsupernova.porocoins.registry.items.joaoItem;
+
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
@@ -12,7 +13,8 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class hugoArmor implements ArmorMaterial{
+public class joaoArmor implements ArmorMaterial
+{
     private static final int[] BASE_DURABILITY = new int[] {1, 1, 1, 1};
     private static final int[] PROTECTION_VALUES = new int[] {99, 99, 99, 99};
 
@@ -38,7 +40,7 @@ public class hugoArmor implements ArmorMaterial{
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(hugoItem.HUGO_COIN);
+        return Ingredient.ofItems(joaoItem.JOAO_COIN);
     }
 
     @Override
@@ -56,19 +58,18 @@ public class hugoArmor implements ArmorMaterial{
         return 1.0F;
     }
 
-    public static final ArmorMaterial hugo_armor = new hugoArmor();
+    public static final ArmorMaterial joao_armor = new joaoArmor();
 
-    public static final Item hugoHelmet = new ArmorItem(hugo_armor, EquipmentSlot.HEAD, new Item.Settings().group(PoroCoins.ITEM_GROUP));
-    public static final Item hugoChestplate = new ArmorItem(hugo_armor, EquipmentSlot.CHEST, new Item.Settings().group(PoroCoins.ITEM_GROUP));
-    public static final Item hugoLeggings = new ArmorItem(hugo_armor, EquipmentSlot.LEGS, new Item.Settings().group(PoroCoins.ITEM_GROUP));
-    public static final Item hugoBoots = new ArmorItem(hugo_armor, EquipmentSlot.FEET, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+    public static final Item joaoHelmet = new ArmorItem(joao_armor, EquipmentSlot.HEAD, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+    public static final Item joaoChestplate = new ArmorItem(joao_armor, EquipmentSlot.CHEST, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+    public static final Item joaoLeggings = new ArmorItem(joao_armor, EquipmentSlot.LEGS, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+    public static final Item joaoBoots = new ArmorItem(joao_armor, EquipmentSlot.FEET, new Item.Settings().group(PoroCoins.ITEM_GROUP));
 
     public static void register()
     {
-        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "hugo_helmet"), hugoHelmet);
-        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "hugo_chestplate"), hugoChestplate);
-        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "hugo_leggings"), hugoLeggings);
-        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "hugo_boots"), hugoBoots);
+        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "joao_helmet"), joaoHelmet);
+        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "joao_chestplate"), joaoChestplate);
+        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "joao_leggings"), joaoLeggings);
+        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "joao_boots"), joaoBoots);
     }
 }
-
