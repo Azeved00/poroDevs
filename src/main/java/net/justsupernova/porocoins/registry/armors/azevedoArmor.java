@@ -1,7 +1,7 @@
 package net.justsupernova.porocoins.registry.armors;
 
 import net.justsupernova.porocoins.PoroCoins;
-import net.justsupernova.porocoins.registry.items.azevedoItem;
+import net.justsupernova.porocoins.registry.Item_Initializer;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
@@ -40,7 +40,7 @@ public class azevedoArmor implements ArmorMaterial
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(azevedoItem.AZEVEDO_COIN);
+        return Ingredient.ofItems(Item_Initializer.AZEVEDO_COIN);
     }
 
     @Override

@@ -1,7 +1,7 @@
 package net.justsupernova.porocoins.registry.armors;
 
 import net.justsupernova.porocoins.PoroCoins;
-import net.justsupernova.porocoins.registry.items.tiagoItem;
+import net.justsupernova.porocoins.registry.Item_Initializer;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
@@ -39,7 +39,7 @@ import net.minecraft.util.registry.Registry;
 
         @Override
         public Ingredient getRepairIngredient() {
-            return Ingredient.ofItems(tiagoItem.TIAGO_COIN);
+            return Ingredient.ofItems(Item_Initializer.TIAGO_COIN);
         }
 
         @Override

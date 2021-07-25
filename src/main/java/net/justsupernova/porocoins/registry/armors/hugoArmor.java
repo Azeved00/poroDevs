@@ -1,7 +1,7 @@
 package net.justsupernova.porocoins.registry.armors;
 
 import net.justsupernova.porocoins.PoroCoins;
-import net.justsupernova.porocoins.registry.items.hugoItem;
+import net.justsupernova.porocoins.registry.Item_Initializer;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
@@ -38,7 +38,7 @@ public class hugoArmor implements ArmorMaterial{
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(hugoItem.HUGO_COIN);
+        return Ingredient.ofItems(Item_Initializer.HUGO_COIN);
     }
 
     @Override
