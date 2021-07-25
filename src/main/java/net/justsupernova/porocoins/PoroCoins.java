@@ -7,9 +7,8 @@ import net.justsupernova.porocoins.registry.Block_Initializer;
 import net.justsupernova.porocoins.registry.Item_Initializer;
 import net.justsupernova.porocoins.registry.armors.azevedoArmor;
 import net.justsupernova.porocoins.registry.armors.hugoArmor;
-import net.justsupernova.porocoins.registry.armors.joaoArmor;
 import net.justsupernova.porocoins.registry.armors.tiagoArmor;
-
+import net.justsupernova.porocoins.registry.worldGen.OreGen_Initializer;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -32,6 +31,7 @@ public class PoroCoins implements ModInitializer {
         Item_Initializer.registerItems();
         Block_Initializer.registerBlocks();
         Block_Initializer.registerBlockItems();
+        OreGen_Initializer.registerFeature();
 
         tiagoArmor.register();
         hugoArmor.register();
