@@ -31,7 +31,7 @@ public class PoroCoins implements ModInitializer {
 
         Item_Initializer.registerItems();
         Block_Initializer.registerBlocks();
-
+        Block_Initializer.registerBlockItems();
 
         tiagoArmor.register();
         hugoArmor.register();
