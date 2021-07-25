@@ -28,6 +28,8 @@ public class PoroCoins implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        System.out.println("fuck seraphine");
+
         tiagoItem.register();
         tiagoBlock.register();
         tiagoBlock.registerFeature();

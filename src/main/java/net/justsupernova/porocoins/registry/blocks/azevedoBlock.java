@@ -48,7 +48,7 @@ public class azevedoBlock {
                     // You can also use one of the other height providers if you don't want a uniform distribution
                     UniformHeightProvider.create(YOffset.aboveBottom(0), YOffset.fixed(64)))) // Inclusive min and max height
             .spreadHorizontally()
-            .repeat(60); // Number of veins per chunk
+            .repeat(16); // Number of veins per chunk
 
     public static void registerFeature() {
         RegistryKey<ConfiguredFeature<?, ?>> oreAzevedoOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,

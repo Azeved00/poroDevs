@@ -71,4 +71,3 @@ public class hugoArmor implements ArmorMaterial{
         Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "hugo boots"), hugoBoots);
     }
 }
-
