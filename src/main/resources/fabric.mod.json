@@ -1,22 +1,21 @@
 {
   "schemaVersion": 1,
   "id": "porocoins",
-  "version": "${version}",
+  "version": "1.0.0",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Poro Coins",
+  "description": "coin.",
   "authors": [
     "JustSupernova",
     "Hukie",
     "Sn0wyGh0st"
   ],
   "contact": {
-    "homepage": "",
-    "sources": ""
+    "sources": "https://github.com/A-Gh0st/poroDevs"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT License",
+  "icon": "assets/porocoins/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
