@@ -1,4 +1,4 @@
-package net.justsupernova.porocoins.registry.coins;
+package net.justsupernova.porocoins.registry.items;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.justsupernova.porocoins.PoroCoins;

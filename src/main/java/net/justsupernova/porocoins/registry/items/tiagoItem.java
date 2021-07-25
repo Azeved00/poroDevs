@@ -1,8 +1,8 @@
-package net.justsupernova.porocoins.registry.coins;
+package net.justsupernova.porocoins.registry.items;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.justsupernova.porocoins.PoroCoins;
-import net.justsupernova.porocoins.registry.blocks.hugoBlock;
+import net.justsupernova.porocoins.registry.blocks.tiagoBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -14,8 +14,8 @@ public class tiagoItem {
     public static final Item TIAGO_COIN = new Item(new FabricItemSettings().group(PoroCoins.ITEM_GROUP));
 
     //block items
-    public static final BlockItem TIAGO_BLOCK = new BlockItem(hugoBlock.HUGO_BLOCK, new Item.Settings().group(PoroCoins.ITEM_GROUP));
-    public static final BlockItem TIAGO_ORE = new BlockItem(hugoBlock.HUGO_ORE, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+    public static final BlockItem TIAGO_BLOCK = new BlockItem(tiagoBlock.TIAGO_BLOCK, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+    public static final BlockItem TIAGO_ORE = new BlockItem(tiagoBlock.TIAGO_ORE, new Item.Settings().group(PoroCoins.ITEM_GROUP));
 
 
     public static void register() {

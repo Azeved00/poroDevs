@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "porocoins:blocks/tiago_block"
+    "all": "porocoins:block/tiago_block"
   }
 }

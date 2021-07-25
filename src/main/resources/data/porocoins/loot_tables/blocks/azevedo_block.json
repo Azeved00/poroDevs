@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "porocoins:hugo_block"
+          "name": "porocoins:azevedo_block"
         }
       ],
       "conditions": [

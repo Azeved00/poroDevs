@@ -1,7 +1,7 @@
 package net.justsupernova.porocoins.registry.armors;
 
 import net.justsupernova.porocoins.PoroCoins;
-import net.justsupernova.porocoins.registry.coins.hugoItem;
+import net.justsupernova.porocoins.registry.items.hugoItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;

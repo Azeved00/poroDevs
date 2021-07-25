@@ -1,7 +1,7 @@
 package net.justsupernova.porocoins.registry.armors;
 
 import net.justsupernova.porocoins.PoroCoins;
-import net.justsupernova.porocoins.registry.coins.azevedoItem;
+import net.justsupernova.porocoins.registry.items.azevedoItem;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
@@ -67,9 +67,9 @@ public class azevedoArmor implements ArmorMaterial
 
     public static void register()
     {
-        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "azevedo helmet"), azevedoHelmet);
-        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "azevedo chestplate"), azevedoChestplate);
-        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "azevedo leggings"), azevedoLeggings);
-        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "azevedo boots"), azevedoBoots);
+        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "azevedo_helmet"), azevedoHelmet);
+        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "azevedo_chestplate"), azevedoChestplate);
+        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "azevedo_leggings"), azevedoLeggings);
+        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "azevedo_boots"), azevedoBoots);
     }
 }

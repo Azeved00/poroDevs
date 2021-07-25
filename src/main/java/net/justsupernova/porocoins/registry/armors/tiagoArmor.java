@@ -1,7 +1,7 @@
 package net.justsupernova.porocoins.registry.armors;
 
 import net.justsupernova.porocoins.PoroCoins;
-import net.justsupernova.porocoins.registry.coins.tiagoItem;
+import net.justsupernova.porocoins.registry.items.tiagoItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
@@ -66,10 +66,10 @@ import net.minecraft.util.registry.Registry;
 
         public static void register()
         {
-            Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "tiago helmet"), tiagoHelmet);
-            Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "tiago chestplate"), tiagoChestplate);
-            Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "tiago leggings"), tiagoLeggings);
-            Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "tiago boots"), tiagoBoots);
+            Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "tiago_helmet"), tiagoHelmet);
+            Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "tiago_chestplate"), tiagoChestplate);
+            Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "tiago_leggings"), tiagoLeggings);
+            Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "tiago_boots"), tiagoBoots);
         }
     }
 
