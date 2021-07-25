@@ -8,8 +8,8 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-
 public class tiagoItem {
+
     //items
     public static final Item TIAGO_COIN = new Item(new FabricItemSettings().group(PoroCoins.ITEM_GROUP));
 
