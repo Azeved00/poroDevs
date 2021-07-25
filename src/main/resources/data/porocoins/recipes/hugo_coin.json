@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "porocoins:hugo_block"
+    }
+  ],
+  "result": {
+    "item": "porocoins:hugo_coin",
+    "count": 9
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "porocoins:block/hugo_block" }
+  }
+}

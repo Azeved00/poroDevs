@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "porocoins:tiago_coin"
+    }
+  },
+  "result": {
+    "item": "porocoins:tiago_block",
+    "count": 1
+  }
+}

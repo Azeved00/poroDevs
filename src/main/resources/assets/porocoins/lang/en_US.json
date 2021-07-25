@@ -1,0 +1,13 @@
+{
+  "item.porocoins.hugo_coin": "Hugo Coin",
+  "block.porocoins.hugo_block": "Hugo Block",
+  "block.porocoins.hugo_ore": "Hugo Ore",
+
+  "item.porocoins.tiago_coin": "Tiago Coin",
+  "block.porocoins.tiago_block": "Tiago Block",
+  "block.porocoins.tiago_ore": "Tiago Ore",
+
+  "item.porocoins.azevedo_coin": "Azevedo Coin",
+  "block.porocoins.azevedo_block": "Azevedo Block",
+  "block.porocoins.azevedo_ore": "Azevedo Ore"
+}
