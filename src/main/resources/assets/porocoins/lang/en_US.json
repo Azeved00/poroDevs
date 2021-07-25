@@ -1,4 +1,6 @@
 {
+  "itemGroup.porocoins.general": "Poro Coins",
+
   "item.porocoins.hugo_coin": "Hugo Coin",
   "block.porocoins.hugo_block": "Hugo Block",
   "block.porocoins.hugo_ore": "Hugo Ore",
