@@ -31,7 +31,7 @@ public class PoroCoins implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        System.out.println("fuck seraphine");
+        System.out.println("loading Poro Coins");
 
         tiagoItem.register();
         tiagoBlock.register();
