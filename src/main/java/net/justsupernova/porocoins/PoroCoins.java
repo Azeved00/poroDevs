@@ -6,8 +6,11 @@ import net.justsupernova.porocoins.registry.armors.azevedoArmor;
 import net.justsupernova.porocoins.registry.items.azevedoItem;
 import net.justsupernova.porocoins.registry.blocks.azevedoBlock;
 import net.justsupernova.porocoins.registry.armors.hugoArmor;
+import net.justsupernova.porocoins.registry.armors.joaoArmor;
 import net.justsupernova.porocoins.registry.blocks.hugoBlock;
+import net.justsupernova.porocoins.registry.blocks.joaoBlock;
 import net.justsupernova.porocoins.registry.items.hugoItem;
+import net.justsupernova.porocoins.registry.items.joaoItem;
 import net.justsupernova.porocoins.registry.armors.tiagoArmor;
 import net.justsupernova.porocoins.registry.items.tiagoItem;
 import net.justsupernova.porocoins.registry.blocks.tiagoBlock;
@@ -44,5 +47,10 @@ public class PoroCoins implements ModInitializer {
         azevedoBlock.register();
         azevedoBlock.registerFeature();
         azevedoArmor.register();
+
+        joaoItem.register();
+        joaoBlock.register();
+        joaoBlock.registerFeature();
+        joaoArmor.register();
     }
 }
