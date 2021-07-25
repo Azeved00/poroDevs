@@ -65,9 +65,9 @@ public class hugoArmor implements ArmorMaterial{
 
     public static void register()
     {
-        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "hugo helmet"), hugoHelmet);
-        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "hugo chestplate"), hugoChestplate);
-        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "hugo leggings"), hugoLeggings);
-        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "hugo boots"), hugoBoots);
+        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "hugo_helmet"), hugoHelmet);
+        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "hugo_chestplate"), hugoChestplate);
+        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "hugo_leggings"), hugoLeggings);
+        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "hugo_boots"), hugoBoots);
     }
 }
