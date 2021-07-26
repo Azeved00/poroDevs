@@ -8,3 +8,4 @@ public class CustomAxeItem extends AxeItem {
         super(material, attackDamage, attackSpeed, settings);
     }
 }
+

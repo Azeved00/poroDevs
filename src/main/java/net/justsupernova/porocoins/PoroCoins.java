@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.justsupernova.porocoins.registry.Block_Initializer;
 import net.justsupernova.porocoins.registry.Item_Initializer;
 import net.justsupernova.porocoins.registry.Combat_Initializer;
+import net.justsupernova.porocoins.registry.worldGen.OreGen_Initializer;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -28,7 +29,7 @@ public class PoroCoins implements ModInitializer {
         Item_Initializer.registerItems();
         Block_Initializer.registerBlocks();
         Block_Initializer.registerBlockItems();
-        //OreGen_Initializer.registerFeature();
+        OreGen_Initializer.registerFeature();
 
         Combat_Initializer.registerArmor();
         Combat_Initializer.registerTools();
