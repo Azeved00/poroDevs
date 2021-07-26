@@ -16,6 +16,8 @@
   "item.porocoins.tiago_chestplate": "Tiago Chestplate",
   "item.porocoins.tiago_leggings": "Tiago Leggings",
   "item.porocoins.tiago_boots": "Tiago Boots",
+  "item.porocoins.tiago_pickaxe" : "Tiago Pickaxe",
+
 
   "item.porocoins.azevedo_coin": "Azevedo Coin",
   "block.porocoins.azevedo_block": "Azevedo Block",
@@ -24,6 +26,7 @@
   "item.porocoins.azevedo_chestplate": "Azevedo Chestplate",
   "item.porocoins.azevedo_leggings": "Azevedo Leggings",
   "item.porocoins.azevedo_boots": "Azevedo Boots",
+  "item.porocoins.azevedo_axe" : "Azevedo Axe",
 
   "item.porocoins.joao_coin": "Joao Coin",
   "block.porocoins.joao_block": "Joao Block",
