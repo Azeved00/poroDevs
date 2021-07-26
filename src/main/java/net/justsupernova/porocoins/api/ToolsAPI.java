@@ -7,13 +7,13 @@ import net.minecraft.recipe.Ingredient;
 public class ToolsAPI implements ToolMaterial
 {
     private final int durability;
-    private final int speed_Mult;
-    private final int a_damage;
+    private final float speed_Mult;
+    private final float a_damage;
     private final int mining_level;
     private final int enchantability;
     private final Item repair_item;
 
-    ToolsAPI(int durability, int speed_mult,int ad, int mining_level,int enchantability,Item repair_item)
+    public ToolsAPI(int durability, float speed_mult,float ad, int mining_level,int enchantability,Item repair_item)
     {
         this.durability = durability;
         this.speed_Mult = speed_mult;

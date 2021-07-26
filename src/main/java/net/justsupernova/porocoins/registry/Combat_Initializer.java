@@ -5,12 +5,15 @@ import net.justsupernova.porocoins.api.*;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolItem;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class Combat_Initializer {
 
+    //--armor--
     public static final ArmorAPI azevedo_armor = new ArmorAPI(
         Item_Initializer.AZEVEDO_COIN,
         "azevedo_armor",
@@ -77,7 +80,7 @@ public class Combat_Initializer {
     public static final Item joaoLeggings = new ArmorItem(joao_armor, EquipmentSlot.LEGS, new Item.Settings().group(PoroCoins.ITEM_GROUP));
     public static final Item joaoBoots = new ArmorItem(joao_armor, EquipmentSlot.FEET, new Item.Settings().group(PoroCoins.ITEM_GROUP));
 
-    public static void register()
+    public static void registerArmor()
     {
         Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "azevedo_helmet"), azevedoHelmet);
         Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "azevedo_chestplate"), azevedoChestplate);
@@ -99,5 +102,32 @@ public class Combat_Initializer {
         Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "joao_leggings"), joaoLeggings);
         Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "joao_boots"), joaoBoots);
     
+    }
+
+    //--Tools--
+    public static final ToolsAPI azevedoToolMaterial = new ToolsAPI(
+            1000,
+            2.5F,
+            10,
+            4,
+            Integer.MAX_VALUE,
+            Item_Initializer.AZEVEDO_COIN
+    );
+    public static final ToolsAPI tiagoToolMaterial = new ToolsAPI(
+            1500,
+            4.0F,
+            3,
+            4,
+            Integer.MAX_VALUE,
+            Item_Initializer.AZEVEDO_COIN
+    );
+
+    public static final Item azevedoAxe = new CustomAxeItem(azevedoToolMaterial,2,2, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+    public static final Item tiagoPickaxe = new CustomPickaxeItem(tiagoToolMaterial,0,0, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+
+    public static void registerTools()
+    {
+        Registry.register(Registry.ITEM,new Identifier(PoroCoins.MOD_ID,"azevedo_axe"),azevedoAxe);
+        Registry.register(Registry.ITEM,new Identifier(PoroCoins.MOD_ID,"tiago_pickaxe"),tiagoPickaxe);
     }
 }

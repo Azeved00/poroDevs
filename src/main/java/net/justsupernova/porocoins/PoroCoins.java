@@ -30,7 +30,7 @@ public class PoroCoins implements ModInitializer {
         Block_Initializer.registerBlockItems();
         //OreGen_Initializer.registerFeature();
 
-        Combat_Initializer.register();
-
+        Combat_Initializer.registerArmor();
+        Combat_Initializer.registerTools();
     }
 }
