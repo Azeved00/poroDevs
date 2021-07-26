@@ -95,10 +95,10 @@ public class Combat_Initializer {
         Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "tiago_leggings"), tiagoLeggings);
         Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "tiago_boots"), tiagoBoots);
 
-        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "joao_helmet"), joaoHelmet);
-        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "joao_chestplate"), joaoChestplate);
-        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "joao_leggings"), joaoLeggings);
-        Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "joao_boots"), joaoBoots);
+        //Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "joao_helmet"), joaoHelmet);
+        //Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "joao_chestplate"), joaoChestplate);
+        //Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "joao_leggings"), joaoLeggings);
+        //Registry.register(Registry.ITEM, new Identifier(PoroCoins.MOD_ID, "joao_boots"), joaoBoots);
     
     }
 

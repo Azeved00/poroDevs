@@ -5,6 +5,7 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.networking.v1.PacketSender;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
+import net.justsupernova.porocoins.PoroCoins;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayNetworkHandler;
 import net.minecraft.client.world.ClientWorld;
@@ -20,9 +21,10 @@ import net.minecraft.world.World;
 import java.util.UUID;
 
 public class EntitySpawnPacket {
-    public static final Identifier ID = new Identifier("adventurez", "adventurespawn_entity");
+    public static final Identifier ID = new Identifier(PoroCoins.MOD_ID, "adventurespawn_entity");
 
-    public static Packet<?> createPacket(Entity entity) {
+    public static Packet<?> createPacket(Entity entity) 
+    {
         PacketByteBuf buf = new PacketByteBuf(Unpooled.buffer());
         buf.writeVarInt(Registry.ENTITY_TYPE.getRawId(entity.getType()));
         buf.writeUuid(entity.getUuid());
@@ -36,7 +38,12 @@ public class EntitySpawnPacket {
     }
 
     @Environment(EnvType.CLIENT)
-    public static void onPacket(MinecraftClient client, ClientPlayNetworkHandler networkHandler, PacketByteBuf buffer, PacketSender sender) {
+    public static void onPacket(
+        MinecraftClient client, 
+        ClientPlayNetworkHandler networkHandler, 
+        PacketByteBuf buffer, 
+        PacketSender sender) 
+    {
         EntityType<?> type = Registry.ENTITY_TYPE.get(buffer.readVarInt());
         UUID entityUUID = buffer.readUuid();
         int entityID = buffer.readVarInt();
@@ -45,10 +52,12 @@ public class EntitySpawnPacket {
         double z = buffer.readDouble();
         float pitch = (buffer.readByte() * 360) / 256.0F;
         float yaw = (buffer.readByte() * 360) / 256.0F;
+       
         client.execute(() -> {
             World world = client.player.getEntityWorld();
             Entity entity = type.create(world);
-            if (entity != null) {
+            if (entity != null) 
+            {
                 entity.updatePosition(x, y, z);
                 entity.updateTrackedPosition(x, y, z);
                 entity.setPitch(pitch);

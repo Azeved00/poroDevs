@@ -13,13 +13,19 @@ import net.minecraft.util.Identifier;
 
 public class RenderInit {
 
-    public static final EntityModelLayer RED_FUNGUS_LAYER = new EntityModelLayer(new Identifier("adventurez:red_fungus_render_layer"), "red_fungus_render_layer");
-    public static final EntityModelLayer BROWN_FUNGUS_LAYER = new EntityModelLayer(new Identifier("adventurez:brown_fungus_render_layer"), "brown_fungus_render_layer");
+    //public static final EntityModelLayer RED_FUNGUS_LAYER = 
+    //new EntityModelLayer(new Identifier("porocoins:red_fungus_render_layer"), "red_fungus_render_layer");
+    public static final EntityModelLayer CUBE_LAYER = 
+    new EntityModelLayer(new Identifier("porocoins:cube_render_layer"), "cube_render_layer");
     
     public static void init() {
         // Entity Renderer
-        EntityRendererRegistry.INSTANCE.register(PoroCoins.RED_FUNGUS_ENTITY, RedFungusRenderer::new);
-        EntityModelLayerRegistry.registerModelLayer(RED_FUNGUS_LAYER, RedFungusModel::getTexturedModelData);
+        //EntityRendererRegistry.INSTANCE.register(PoroCoins.RED_FUNGUS_ENTITY, RedFungusRenderer::new);
+        //EntityModelLayerRegistry.registerModelLayer(RED_FUNGUS_LAYER, RedFungusModel::getTexturedModelData);
+
+
+        EntityRendererRegistry.INSTANCE.register(PoroCoins.CUBE, cubeRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(CUBE_LAYER, cubeModel::getTexturedModelData);
         
         // Network
         ClientPlayNetworking.registerGlobalReceiver(EntitySpawnPacket.ID, EntitySpawnPacket::onPacket);

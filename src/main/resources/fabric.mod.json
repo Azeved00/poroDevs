@@ -21,6 +21,9 @@
   "entrypoints": {
     "main": [
       "net.justsupernova.porocoins.PoroCoins"
+    ],
+    "client": [
+      "net.justsupernova.porocoins.PoroCoinsClient"
     ]
   },
   "mixins": [
