@@ -13,6 +13,12 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class hugoArmor implements ArmorMaterial{
+    private static final Item repair = Item_Initializer.HUGO_COIN;
+    private static final String name = "hugo_armor";
+    private static final int enchantability = Integer.MAX_VALUE;
+    private static final SoundEvent sound = SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE;
+    private static final float toughness = 1.0F;
+    private static final float K_resistance = 1.0F;
     private static final int[] BASE_DURABILITY = new int[] {1, 1, 1, 1};
     private static final int[] PROTECTION_VALUES = new int[] {99, 99, 99, 99};
 
@@ -28,33 +34,34 @@ public class hugoArmor implements ArmorMaterial{
 
     @Override
     public int getEnchantability() {
-        return Integer.MAX_VALUE;
+        return enchantability;
     }
 
     @Override
     public SoundEvent getEquipSound() {
-        return SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE;
+        return sound;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(Item_Initializer.HUGO_COIN);
+        return Ingredient.ofItems(repair);
     }
 
     @Override
     public String getName() {
-        return "name";
+        return name;
     }
 
     @Override
     public float getToughness() {
-        return 1.0F;
+        return toughness;
     }
 
     @Override
     public float getKnockbackResistance() {
-        return 1.0F;
+        return K_resistance;
     }
+
 
     public static final ArmorMaterial hugo_armor = new hugoArmor();
 
