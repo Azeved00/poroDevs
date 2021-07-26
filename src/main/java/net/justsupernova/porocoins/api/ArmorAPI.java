@@ -1,4 +1,4 @@
-package net.justsupernova.porocoins.API;
+package net.justsupernova.porocoins.api;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
@@ -8,14 +8,14 @@ import net.minecraft.sound.SoundEvent;
 
 public class ArmorAPI implements ArmorMaterial
 {   
-    private Item repair;
-    private  String name;
-    private  int enchantability;
-    private  SoundEvent sound;
-    private  float toughness;
-    private  float knockback_resistance;
-    private  int[] BASE_DURABILITY;
-    private  int[] PROTECTION_VALUES;
+    private final Item repair;
+    private final String name;
+    private final int enchantability;
+    private final SoundEvent sound;
+    private final float toughness;
+    private final float knockback_resistance;
+    private final int[] BASE_DURABILITY;
+    private final int[] PROTECTION_VALUES;
     
     public ArmorAPI(Item armor_repair_item,String name,int enchantability, SoundEvent equip_sound,float toughness,float knockback_resistance,int[] durability,int[] protection_value){
         this.repair = armor_repair_item;

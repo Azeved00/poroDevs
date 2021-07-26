@@ -1,7 +1,7 @@
 package net.justsupernova.porocoins.registry;
 
 import net.justsupernova.porocoins.PoroCoins;
-import net.justsupernova.porocoins.API.ArmorAPI;
+import net.justsupernova.porocoins.api.*;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
@@ -9,7 +9,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class Armor_Initializer{
+public class Combat_Initializer {
 
     public static final ArmorAPI azevedo_armor = new ArmorAPI(
         Item_Initializer.AZEVEDO_COIN,
