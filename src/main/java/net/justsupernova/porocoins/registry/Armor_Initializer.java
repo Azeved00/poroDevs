@@ -22,11 +22,7 @@ public class Armor_Initializer{
         new int[]{99,99,99,99}
         );
         
-    public static final Item azevedoHelmet = new ArmorItem(azevedo_armor, EquipmentSlot.HEAD, new Item.Settings().group(PoroCoins.ITEM_GROUP));
-    public static final Item azevedoChestplate = new ArmorItem(azevedo_armor, EquipmentSlot.CHEST, new Item.Settings().group(PoroCoins.ITEM_GROUP));
-    public static final Item azevedoLeggings = new ArmorItem(azevedo_armor, EquipmentSlot.LEGS, new Item.Settings().group(PoroCoins.ITEM_GROUP));
-    public static final Item azevedoBoots = new ArmorItem(azevedo_armor, EquipmentSlot.FEET, new Item.Settings().group(PoroCoins.ITEM_GROUP));
-
+    
     public static final ArmorAPI hugo_armor = new ArmorAPI(
         Item_Initializer.HUGO_COIN,
         "hugo_armor",
@@ -38,11 +34,6 @@ public class Armor_Initializer{
         new int[]{99,99,99,99}
         );
         
-    public static final Item hugoHelmet = new ArmorItem(hugo_armor, EquipmentSlot.HEAD, new Item.Settings().group(PoroCoins.ITEM_GROUP));
-    public static final Item hugoChestplate = new ArmorItem(hugo_armor, EquipmentSlot.CHEST, new Item.Settings().group(PoroCoins.ITEM_GROUP));
-    public static final Item hugoLeggings = new ArmorItem(hugo_armor, EquipmentSlot.LEGS, new Item.Settings().group(PoroCoins.ITEM_GROUP));
-    public static final Item hugoBoots = new ArmorItem(hugo_armor, EquipmentSlot.FEET, new Item.Settings().group(PoroCoins.ITEM_GROUP));
-
     public static final ArmorAPI tiago_armor = new ArmorAPI(
         Item_Initializer.TIAGO_COIN,
         "tiago_armor",
@@ -54,11 +45,7 @@ public class Armor_Initializer{
         new int[]{99,99,99,99}
         );
         
-    public static final Item tiagoHelmet = new ArmorItem(tiago_armor, EquipmentSlot.HEAD, new Item.Settings().group(PoroCoins.ITEM_GROUP));
-    public static final Item tiagoChestplate = new ArmorItem(tiago_armor, EquipmentSlot.CHEST, new Item.Settings().group(PoroCoins.ITEM_GROUP));
-    public static final Item tiagoLeggings = new ArmorItem(tiago_armor, EquipmentSlot.LEGS, new Item.Settings().group(PoroCoins.ITEM_GROUP));
-    public static final Item tiagoBoots = new ArmorItem(tiago_armor, EquipmentSlot.FEET, new Item.Settings().group(PoroCoins.ITEM_GROUP));
-
+    
     public static final ArmorAPI joao_armor = new ArmorAPI(
         Item_Initializer.JOAO_COIN,
         "joao_armor",
@@ -70,6 +57,21 @@ public class Armor_Initializer{
         new int[]{99,99,99,99}
         );
         
+    public static final Item azevedoHelmet = new ArmorItem(azevedo_armor, EquipmentSlot.HEAD, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+    public static final Item azevedoChestplate = new ArmorItem(azevedo_armor, EquipmentSlot.CHEST, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+    public static final Item azevedoLeggings = new ArmorItem(azevedo_armor, EquipmentSlot.LEGS, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+    public static final Item azevedoBoots = new ArmorItem(azevedo_armor, EquipmentSlot.FEET, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+    
+    public static final Item hugoHelmet = new ArmorItem(hugo_armor, EquipmentSlot.HEAD, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+    public static final Item hugoChestplate = new ArmorItem(hugo_armor, EquipmentSlot.CHEST, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+    public static final Item hugoLeggings = new ArmorItem(hugo_armor, EquipmentSlot.LEGS, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+    public static final Item hugoBoots = new ArmorItem(hugo_armor, EquipmentSlot.FEET, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+
+    public static final Item tiagoHelmet = new ArmorItem(tiago_armor, EquipmentSlot.HEAD, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+    public static final Item tiagoChestplate = new ArmorItem(tiago_armor, EquipmentSlot.CHEST, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+    public static final Item tiagoLeggings = new ArmorItem(tiago_armor, EquipmentSlot.LEGS, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+    public static final Item tiagoBoots = new ArmorItem(tiago_armor, EquipmentSlot.FEET, new Item.Settings().group(PoroCoins.ITEM_GROUP));
+
     public static final Item joaoHelmet = new ArmorItem(joao_armor, EquipmentSlot.HEAD, new Item.Settings().group(PoroCoins.ITEM_GROUP));
     public static final Item joaoChestplate = new ArmorItem(joao_armor, EquipmentSlot.CHEST, new Item.Settings().group(PoroCoins.ITEM_GROUP));
     public static final Item joaoLeggings = new ArmorItem(joao_armor, EquipmentSlot.LEGS, new Item.Settings().group(PoroCoins.ITEM_GROUP));
