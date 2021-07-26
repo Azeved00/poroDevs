@@ -17,18 +17,16 @@ public class OreGen_Initializer {
     public static void registerFeature() {
 
         RegistryKey<ConfiguredFeature<?, ?>> oreTiagoOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY, new Identifier(PoroCoins.MOD_ID, "ore_tiago_overworld"));
-                Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreTiagoOverworld.getValue(), ORE_TIAGO_OVERWORLD);
-                BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreTiagoOverworld);
-
-        /*
-
         RegistryKey<ConfiguredFeature<?, ?>> oreAzevedoOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY, new Identifier(PoroCoins.MOD_ID, "ore_azevedo_overworld"));
-                Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreTiagoOverworld.getValue(), ORE_AZEVEDO_OVERWORLD);
-                BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreAzevedoOverworld);
-
         RegistryKey<ConfiguredFeature<?, ?>> oreHugoOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY, new Identifier(PoroCoins.MOD_ID, "ore_hugo_overworld"));
-                Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreTiagoOverworld.getValue(), ORE_HUGO_OVERWORLD);
-                BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreHugoOverworld);
+        
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreTiagoOverworld);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreAzevedoOverworld);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreHugoOverworld);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreTiagoOverworld.getValue(), ORE_TIAGO_OVERWORLD);
+        //Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreTiagoOverworld.getValue(), ORE_AZEVEDO_OVERWORLD);
+        //Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreTiagoOverworld.getValue(), ORE_HUGO_OVERWORLD);
 
         /*
         RegistryKey<ConfiguredFeature<?, ?>> oreJoaoOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
